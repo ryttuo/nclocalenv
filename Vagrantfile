@@ -8,10 +8,16 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "scotchbox"
     config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
     
-    # Optional NFS. Make sure to remove other synced_folder line too
+    #Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
 
-   config.vm.provision "shell", path: "bootstrap.sh"
-   config.ssh.forward_agent = true
+    #config.ssh.private_key_path = "~/.ssh/id_rsa"
+    #config.ssh.forward_agent = true
+
+    #ssh_pub_key = File.readlines("#{Dir.home}/.ssh/id_rsa.pub").first.strip
+    #config.vm.provision 'shell', inline: "echo #{ssh_pub_key} >> /root/.ssh/authorized_keys"
+    #config.vm.provision 'shell', inline: "echo #{ssh_pub_key} >> /home/vagrant/.ssh/authorized_keys", privileged: false
+	
+    config.vm.provision "shell", path: "bootstrap.sh"
 
 end

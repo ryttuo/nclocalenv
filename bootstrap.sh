@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 #--------------------------------------------------------
 #Inittial script for provision box.scotch.io vagrant setup 
@@ -7,22 +7,10 @@
 #
 #--------------------------------------------------------
 
-#clone naturallycurly repo and yii
-cd /var/www/
-mkdir tmi/
-cd tmi/
-echo "cloning yii repo on /var/www/tmi/"
-git clone git@github.com:yiisoft/yii.git
-echo "clone naturallycurly repo on /var/www/tmi/"
-git clone git@github.com:texturemedia/NC4.0.git
 echo "making symlink for yii framework"
-cd NC4.0/common/lib/
+cd /var/www/tmi/NC4.0/common/lib/
 ln -s /var/www/tmi/yii/framework yii
-cd /var/www/tmi/NC4.0/
-echo "install npm dependencies"
-npm install
-echo "exec grunt"
-grunt
+
 
 #adding virtualhosts
 echo "adding virtualhosts local.naturallycurly.com and local.backend.naturallycurly.com"
@@ -42,3 +30,7 @@ rm -r sites-available/
 
 echo "restart apache2"
 service apache2 restart
+
+cd /var/www/tmi/NC4.0/
+echo "install npm install dependecies"
+npm install
