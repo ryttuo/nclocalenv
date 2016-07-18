@@ -30,7 +30,7 @@
 
 <p>
 
-192.168.77.17	local.naturallycurly.com
-192.168.77.17	local.backend.naturallycurly.com<br/>
+192.168.77.17	local.naturallycurly.com<br>
+192.168.77.17	local.backend.naturallycurly.com
 
 </p>
