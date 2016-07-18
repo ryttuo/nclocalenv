@@ -16,6 +16,9 @@ mkdir nuggets
 echo "update owner tmp vagrant dir"
 chown vagrant:vagrant /home/vagrant/tmp
 
+echo "added github.com -oStrictHostKeyChecking=no"
+ssh -oStrictHostKeyChecking=no -T git@github.com
+
 echo "remember added this virtualhosts to /etc/hosts like this:"
 echo "192.168.77.17	local.naturallycurly.com"
 echo "192.168.77.17	local.backend.naturallycurly.com"
