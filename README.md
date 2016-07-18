@@ -22,9 +22,9 @@
 
 <h2>Access:</h2>
 
-<p>Then you can test local enviroment go to this url:</p>
+<p>Then you can start working with your local enviroment on this url:</p>
 
-<p></p>
+<p>http://192.168.77.17</p>
 
 <p>Remember add domain name to your /etc/hosts like this:</p>
 
