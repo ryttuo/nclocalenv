@@ -19,3 +19,18 @@
 	<li>php build/deploy.php (type everything about development)</li>
 	<li>cp /var/www/tmp/.htaccess frontend/www/ </li>
 </ol>
+
+<h2>Access:</h2>
+
+<p>Then you can test local enviroment go to this url:</p>
+
+<p></p>
+
+<p>Remember add domain name to your /etc/hosts like this:</p>
+
+<p>
+```
+192.168.77.17	local.naturallycurly.com
+192.168.77.17	local.backend.naturallycurly.com
+```
+</p>
