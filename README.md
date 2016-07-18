@@ -29,8 +29,8 @@
 <p>Remember add domain name to your /etc/hosts like this:</p>
 
 <p>
-```
+
 192.168.77.17	local.naturallycurly.com
-192.168.77.17	local.backend.naturallycurly.com
-```
+192.168.77.17	local.backend.naturallycurly.com<br/>
+
 </p>
