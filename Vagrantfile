@@ -3,10 +3,12 @@
 
 Vagrant.configure("2") do |config|
 
-    config.vm.box = "scotch/box"
-    config.vm.network "private_network", ip: "192.168.33.10"
-    config.vm.hostname = "scotchbox"
-    config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.box = "ncbox"
+    config.vm.box_url = "http://45.55.219.154/vagrantboxes/ncbox.box"
+    config.vm.network "private_network", ip: "192.168.77.17"
+    config.vm.hostname = "nclocal"
+    #config.vm.synced_folder ".", "/var/www/tmi", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder ".", "/var/www", type: 'nfs'
     
     #Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
@@ -18,6 +20,7 @@ Vagrant.configure("2") do |config|
     #config.vm.provision 'shell', inline: "echo #{ssh_pub_key} >> /root/.ssh/authorized_keys"
     #config.vm.provision 'shell', inline: "echo #{ssh_pub_key} >> /home/vagrant/.ssh/authorized_keys", privileged: false
 	
+    #config.vm.provision :shell, privileged: false, path: "bootstrap.sh"
     config.vm.provision "shell", path: "bootstrap.sh"
 
 end
