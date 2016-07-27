@@ -3,8 +3,8 @@
 <h2>Requirements:</h2>
 
 <ul>
-	<li><a href="https://www.vagrantup.com/downloads.html">vagrant</a></li>
 	<li><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></li>
+	<li><a href="https://www.vagrantup.com/downloads.html">vagrant</a></li>
 	<li>Access to repos</li>
 </ul>
 
