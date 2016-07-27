@@ -16,7 +16,7 @@
 	<li>./init-setup.sh</li>
 	<li>vagrant ssh</li>
 	<li>cd /var/www/tmi/NC4.0/</li>
-	<li>php build/deploy.php (type everything about development)</li>
+	<li>php build/deploy.php (wait for npm dependecies then type all servers and everything about development)</li>
 	<li>cp /var/www/tmp/.htaccess frontend/www/ </li>
 </ol>
 
