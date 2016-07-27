@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
 
-    config.vm.box = "nclocalbox"
-    config.vm.box_url = "http://45.55.219.154/vagrantboxes/nclocalbox.box"
+    config.vm.box = "ncbox"
+    config.vm.box_url = "http://45.55.219.154/vagrantboxes/ncbox.box"
     config.vm.network "private_network", ip: "192.168.77.17"
     config.vm.hostname = "nclocal"
     #config.vm.synced_folder ".", "/var/www/tmi", :mount_options => ["dmode=777", "fmode=666"]
