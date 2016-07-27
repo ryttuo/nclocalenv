@@ -1,4 +1,4 @@
-<h1> Local enviroment setup with <a href="https://box.scotch.io/">box.scotch.io</a> vagrant box </h1>
+<h1> Local enviroment setup with a custom <a href="https://box.scotch.io/">box.scotch.io</a> vagrant box </h1>
 
 <h2>Requirements:</h2>
 
