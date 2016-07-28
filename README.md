@@ -22,11 +22,11 @@
 
 <h2>Access:</h2>
 
-<p>Then you can start working with your local enviroment on this url:</p>
+<!--<p>Then you can start working with your local enviroment on this url:</p>
 
-<p>http://192.168.77.17</p>
+<p>http://192.168.77.17</p>--!>
 
-<p>Remember add domain name to your /etc/hosts like this:</p>
+<p>Remember to add domain name to your /etc/hosts like this:</p>
 
 <p>
 
@@ -35,3 +35,5 @@
 192.168.77.17	local.api.naturallycurly.com
 
 </p>
+
+<p>go to url local.naturallycurly.com and Enjoy :) </p> 
