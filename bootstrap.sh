@@ -33,7 +33,7 @@ ln -s ../sites-available/local.api.naturallycurly.conf .
 service apache2 restart
 
 
-echo "remember added this virtualhosts to /etc/hosts like this:"
+echo "remember to add this virtualhosts to /etc/hosts like this:"
 echo "192.168.77.17	local.naturallycurly.com"
 echo "192.168.77.17	local.backend.naturallycurly.com"
 echo "192.168.77.17	local.api.naturallycurly.com"
