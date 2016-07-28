@@ -5,7 +5,7 @@
 <ul>
 	<li><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></li>
 	<li><a href="https://www.vagrantup.com/downloads.html">vagrant</a></li>
-	<li>Access to repos</li>
+	<li>Access to repos <a href="https://github.com/yiisoft/yii">Yii</a> and <a href="https://github.com/texturemedia/NC4.0">NC4.0</a></li>
 </ul>
 
 <h2>Steps:</h2>
